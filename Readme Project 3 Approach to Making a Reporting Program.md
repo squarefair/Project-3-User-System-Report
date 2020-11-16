@@ -2,8 +2,19 @@ I see that there is a request for me to make a program that will track certain o
 
 This program is going to need at least 4 defined functions. 
 The first defenition I need to make is for suspicious activites(suspicious_report.txt). Suspicious activity is when a user logs in between 00:00 hours and 05:00 hundred hours. We are using military time. Logging in 5 times in one day is also going to be considered suspicious activity.
+
 The second defention is for irresponsible behavior. This will be defined as logging in more than you log out. Basically fogetting to log out will be named irresponsibe behavior.
-The third defenition is going to be for system glithches. This will be defined as a user loggin out more than they log in, This is impossible so it will be called a glitch.
+
+The third defenition is going to be for system glitches. This will be defined as a user loggin out more than they log in, This is impossible so it will be called a glitch.
+
 For the fourth defeniton is going to be for domain count. This will display a users email ID, name, and domain name.
 It has come to my attention that the 5 defenitions must each produce a report. So I will need to put each defenition in its own cell.
 These reports will need to produce text files.
+
+This task seems more intricate than I thought. Something key to making this program work is line.split. I need to get each column read. I also needed to close the files after I made them to prevent further writing and complication.
+
+
+The first issue I had was splitting the columns apart in the userlog. THis was solved by doing line.split(" ")
+
+The second issue I had making this porgram was reading the military time properly
+
